@@ -1,18 +1,16 @@
 * {
     transition: all .1s ease-in;
 }
-/* html {
-    height: 100%;
-} */
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 100%;
     font-family: 'Trebuchet MS', Arial, sans-serif;
     font-size: 25px;
     border: 20px solid #ffffff;
     background-color: #3B3F45;
-    min-height: 100%;
+    min-height: 100vh;
 }
 header {
     background-color: #4A4F56;
@@ -23,16 +21,31 @@ header h1 {
     margin: 0;
     padding-top: 20px;
 }
-h1+p {
+h1 + p {
     margin: 0;
-    padding-bottom: 20px;;
+    padding-bottom: 20px;
+}
+form {
+    /* width: max-content; */
+    width: calc(60% + 50px);
+    margin-left: auto;
+    margin-right: auto;
 }
 .shopping-list {
     list-style: none;
+    padding-left: 0;
 }
 .shopping-list li {
+    /* padding: 10px; */
+    /* width: 100%; */
+}
+label {
+    display: block;
     padding: 10px;
 }
+/* label:checked {
+    text-decoration: line-through;
+} */
 ul li:nth-child(odd) {
     background-color: #88839E;
 }
@@ -54,18 +67,52 @@ ul li:active {
     border-top: 2px solid #ffffff;
     border-bottom: 2px solid #ffffff;
 }
-span {
+/* span {
     color: #B2AFBD;
     font-size: 15px;
-}
+} */
 .shopping-list [type="checkbox"] {
     width: 20px;
     height: 20px;
     vertical-align: middle;
 }
-.shopping-list [type="checkbox"]:checked {
+.shopping-list [type="checkbox"]:checked + span {
     text-decoration: line-through;
+    color: #9CA0B5;
+}
+.shopping-list__item1::after {
+    content: " ( for the next lessons about CSS )";
+}
+.shopping-list__item2::after {
+    content: " ( for more CSS manipulations )";
+}
+.shopping-list__item3::after {
+    content: " ( because they are awesome )";
+}
+.shopping-list__item4::after {
+    content: " ( hm... they always disappear )";
+}
+.shopping-list__item6::after {
+    content: " ( for my friends )";  
+}
+.shopping-list__item1::after,
+.shopping-list__item2::after,
+.shopping-list__item3::after,
+.shopping-list__item4::after,
+.shopping-list__item6::after {
+    font-size: 14px;
 }
 button {
     background-color: #4A4F56;
+    width: 100%;
+    padding: 20px;
+    color: #EB7E7F;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+button:active {
+    background-color:#EB7E7F;
+    color: #ffffff;
 }
