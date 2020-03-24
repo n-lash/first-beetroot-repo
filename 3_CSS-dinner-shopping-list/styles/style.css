@@ -116,3 +116,6 @@ button:active {
     background-color:#EB7E7F;
     color: #ffffff;
 }
+button:hover {
+    background-color: #9CA0B5;
+}
