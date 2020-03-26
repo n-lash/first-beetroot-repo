@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background-color: #121116;
+    min-height: 100vh; /*минимальн высота, т.е. не меньше.Если не указать-появится скролл*/
+    /* width: 100vw; */
+    font-size: 100%;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.footer {
+    text-align: center;
+    padding: 120px 0 40px;
+}
+
+.footer__link {
+    display: inline-block;
+    margin-bottom: 45px;
+}
+.footer__img {
+    width: 112px;
+    height: 36px;
+}
+.footer__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto 20px;
+    padding-bottom: 20px;
+    /* max-width: fit-content; */
+    width: 280px;
+    /* width: 34%; */
+    letter-spacing: 1px;
+}
+.footer__list {
+    list-style: none;
+    margin-bottom: 85px;
+}
+.footer__list-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer__list-link span {
+    font-size: 0;
+}
+.footer__list-item {
+    margin-right: 25px;
+    display: inline-block;
+}
+.footer__list-item:last-child {
+    margin-bottom: 0;
+}
+
+
+.footer__list-link {
+    text-decoration: none;
+    color: fff;
+    transition: color 0.2s ease;
+}
+.footer__list-link:hover {
+    color: #00c7fc;
+}
+
+
+.footer__copyright {
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.footer__copyright > a {
+    text-decoration: none;
+    color: #00c7fc;
+    text-decoration: none;
+}
