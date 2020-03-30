@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Raleway-Light";
+  src: local("Raleway Light"), local("Raleway-Light"),
+    url("../assets/fonts/ralewaylight.woff2") format("woff2"),
+    url("../assets/fonts/ralewaylight.woff") format("woff"),
+    url("../assets/fonts/ralewaylight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway-Bold";
+  src: local("Raleway Bold"), local("Raleway-Bold"),
+    url("../assets/fonts/ralewaybold.woff2") format("woff2"),
+    url("../assets/fonts/ralewaybold.woff") format("woff"),
+    url("../assets/fonts/ralewaybold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway-Black";
+  src: local("Raleway Black"), local("Raleway-Black"),
+    url("../assets/fonts/ralewayblack.woff2") format("woff2"),
+    url("../assets/fonts/ralewayblack.woff") format("woff"),
+    url("../assets/fonts/ralewayblack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+:root {
+  --main-font: "Raleway-Light", serif;
+  --sec-font: "Raleway-Bold", serif;
+  --date-font: "Raleway-Black", serif;
+
+  --title-size: 90px;
+  --medium-size: 20px;
+  --text-size: 17px;
+  --small-size: 13px;
+
+  --main-color: #b07cf7;
+  --font-color: #fff;
+  --btn-color: #f72b3b;
+  --date-color: #262626;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* html, body {
+    min-height: 100vh;
+} */
+body {
+  font-size: 100%;
+  min-height: 100vh;
+  display: flex;
+  color: var(--font-color);
+  font-family: var(--main-font);
+  background-color: var(--main-color);
+  /* justify-content: stretch;
+    align-items: stretch; */
+}
+.blog {
+  flex: 1;
+  /* background-color: var(--main-color); */
+  padding: 100px 15px 120px;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog__title {
+  font-family: var(--sec-font);
+  /* font-weight: 700; */
+  font-size: var(--title-size);
+  margin-bottom: 30px;
+}
+.blog__text {
+  font-size: var(--text-size);
+  /* margin: 0 auto 46px; */
+  margin-bottom: 46px;
+  max-width: 563px;
+  text-align: center;
+}
+.blog__list {
+  list-style: none;
+  display: flex;
+  margin-bottom: 50px;
+}
+.blog__list-card {
+  position: relative;
+  margin-right: 28px;
+  padding: 210px 43px 23px 20px;
+  background: url("../assets/img/img1.jpg") center no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 12px 0 rgba(0, 0, 0, 0.5);
+  background-color: #fbfbf7;
+}
+.blog__list-card:nth-child(2) {
+  background: url("../assets/img/img2.jpg") center no-repeat;
+  background-size: cover;
+}
+.blog__list-card:last-child {
+  margin-right: 0;
+  background: url("../assets/img/img3.jpg") center no-repeat;
+  background-size: cover;
+}
+.blog__list-card:hover {
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+.blog__card-date {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  /* padding: 8px; */
+  background-color: var(--date-color);
+  opacity: 0.5;
+  font-family: var(--sec-font);
+  /* font-size: var(--medium-size); */
+  font-size: 32px;
+  border-radius: 5px;
+  line-height: 1;
+}
+.blog__card-month {
+    font-family: var(--date-font);
+    font-size: 18px;
+    line-height: 1;
+}
+
+.blog__card-description {
+    font-family: var(--sec-font);
+    font-size: var(--medium-size);
+    margin-bottom: 18px;
+}
+.blog__card-bottom-date {
+    font-size: var(--small-size);
+}
+.blog__link {
+    display: flex;
+    padding: 20px 44px;
+    background-color: var(--btn-color);
+    text-decoration: none;
+    color: inherit;
+    font-size: var(--medium-size);
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
+    border: 2px solid transparent;
+    transition: all .3s ease;
+}
+.blog__link:hover {
+    border-color: var(--btn-color);
+    background-color: transparent;
+}
+.blog__link:active {
+    box-shadow: none;
+}
+
+/*  тень 3 блоков 
+box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.5);
+  background-color: #fbfbf7; */
