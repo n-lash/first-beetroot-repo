@@ -19,7 +19,7 @@
 8.  **CSS позиционирование и трансформация**
 9.  **Шрифты в вэбе, Font face**
 10. **Flexbox**
-*_[Cups](https://n-lash.github.io/first-beetroot-repo/5_Cups-flexbox/)_
+* _[Cups](https://n-lash.github.io/first-beetroot-repo/5_Cups-flexbox/)_
 * _[Blog](https://n-lash.github.io/first-beetroot-repo/6_Blog_flexbox/)_
 * _[Cahee__Blog-section](https://n-lash.github.io/first-beetroot-repo/Lessons/10_Cahee_Blog_flexbox/)_
 11. **Методология БЭМ**
