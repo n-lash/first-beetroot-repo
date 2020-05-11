@@ -1,4 +1,4 @@
-### Front-End cource. Lessons List
+### Front-End cource. Lessons List. part 1
 
 1.  **Введение в HTML**
 * _[Resume HTML](https://n-lash.github.io/first-beetroot-repo/1/)_
